@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="013771c0-65cc-42f6-8102-af96e115b04e" name="Default" comment="2016-11-1 找出包含的字符串">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Java常用类的使用/CalendarTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Java常用类的使用/Solution.java" />
+    <list default="true" id="013771c0-65cc-42f6-8102-af96e115b04e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/具有getmin功能的栈/Mystack.java" afterPath="$PROJECT_DIR$/src/具有getmin功能的栈/Mystack.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/用两个栈实现队列/TwoStackQueue.java" afterPath="$PROJECT_DIR$/src/用两个栈实现队列/TwoStackQueue.java" />
@@ -726,7 +724,7 @@
       <updated>1477965085541</updated>
       <workItem from="1477965088475" duration="5410000" />
       <workItem from="1478010820773" duration="178000" />
-      <workItem from="1478855996308" duration="253000" />
+      <workItem from="1478855996308" duration="296000" />
     </task>
     <task id="LOCAL-00001" summary="2016-11-1 优化了分类">
       <created>1477965683284</created>
@@ -756,11 +754,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477973707098</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="2016-11-1 Java常用类的使用">
+      <created>1478856287616</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1478856287616</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5841000" />
+    <option name="totallyTimeSpent" value="5884000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -829,7 +834,8 @@
     <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
     <MESSAGE value="2016-11-1 优化了分类" />
     <MESSAGE value="2016-11-1 找出包含的字符串" />
-    <option name="LAST_COMMIT_MESSAGE" value="2016-11-1 找出包含的字符串" />
+    <MESSAGE value="2016-11-1 Java常用类的使用" />
+    <option name="LAST_COMMIT_MESSAGE" value="2016-11-1 Java常用类的使用" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
