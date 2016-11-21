@@ -1,6 +1,7 @@
 package swingdemo;
 
 import java.awt.BorderLayout;
+import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.TextArea;
 import java.io.BufferedReader;
@@ -16,6 +17,7 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.BorderFactory;
 import javax.swing.JComboBox;
 import javax.swing.JButton;
+import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 import javax.swing.JTextPane;
 import javax.swing.JTextArea;
@@ -74,7 +76,7 @@ public class swingTest extends JFrame {
 		}
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
+		setBounds(100, 100, 1000, 600);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
@@ -109,8 +111,18 @@ public class swingTest extends JFrame {
 				.toString());
 		contentPane.add(textArea, BorderLayout.CENTER);
 		
-		table = new JTable();
-		contentPane.add(table, BorderLayout.EAST);
+		
+		final Object[] columnNames = {"专业", "班级", "学号","姓名", "java"};
+		final Object[][] rowData = new Object[60][5];
+		for (Student student : students) {
+			rowData[students.indexOf(student)]=student.array();
+		}
+		System.out.println(rowData);
+		JTable table = new JTable(rowData,columnNames);
+		
+		JScrollPane pane1 = new JScrollPane (table);
+		table.setPreferredScrollableViewportSize(new Dimension(600, 100)); 
+		contentPane.add(pane1,BorderLayout.EAST);
 	}
 
 }
@@ -132,10 +144,28 @@ class Student {
 		return sName;
 	}
 
+	public String getsClass() {
+		return sClass;
+	}
+	public String getsCollege() {
+		return sCollege;
+	}
+	public String getsNo() {
+		return sNo;
+	}
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
 		return ("专业为\t" + sCollege + "\n" + "班级为\t" + sClass + "\n" + "学号为\t"
 				+ sNo + "\n" + "姓名为\t" + sName + "\n");
+	}
+	public Object[] array(){
+		Object[] a = new Object[5];
+		a[0] = getsCollege();
+		a[1] = getsClass();
+		a[2] = getsNo();
+		a[3] = getsName();
+		a[4] = null;
+		return a;
+		
 	}
 }
